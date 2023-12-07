@@ -81,7 +81,7 @@ public class GamePanel extends ViewElement {
                     tmp.addMouseListener(new MouseAdapter() {
                         @Override
                         public void mouseClicked(MouseEvent e) {
-                            if(isVote && client.getPlayer() != p){
+                            if(isVote && !client.getPlayer().equals(p)){
                                 for (Component component : answerContainer.getComponents()) {
                                     component.setBackground(Color.WHITE);
                                 }

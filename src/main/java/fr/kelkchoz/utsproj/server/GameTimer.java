@@ -133,7 +133,7 @@ public class GameTimer {
     }
 
     public void updatePlayerVote(Player player, Player vote) {
-        if(player == vote) {
+        if(player.equals(vote)) {
             return;
         }
         voteState.getVotes().put(player, vote);
